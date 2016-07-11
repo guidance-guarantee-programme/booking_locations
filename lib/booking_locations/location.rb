@@ -18,6 +18,10 @@ module BookingLocations
       @data['address']
     end
 
+    def online_booking_twilio_number
+      @data['online_booking_twilio_number']
+    end
+
     def locations
       @locations ||= @data['locations'].map { |child_data| Location.new(child_data) }
     end

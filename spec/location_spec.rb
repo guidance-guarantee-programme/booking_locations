@@ -4,11 +4,13 @@ RSpec.describe BookingLocations::Location do
       'uid' => '9d7c72fc-0c74-4418-8099-e1a4e704cb01',
       'name' => 'Somewhere CAB',
       'address' => '10 Some Place',
+      'online_booking_twilio_number' => '+44345567890',
       'locations' => [
         {
           'uid' => '1d7c72fc-0c74-4418-8099-e1a4e704cb01',
           'name' => 'Child CAB',
-          'address' => '10 Child Address'
+          'address' => '10 Child Address',
+          'online_booking_twilio_number' => ''
         }
       ],
       'guiders' => [
@@ -42,10 +44,15 @@ RSpec.describe BookingLocations::Location do
     expect(subject.address).to eq('10 Some Place')
   end
 
+  it 'has an online booking twilio number' do
+    expect(subject.online_booking_twilio_number).to eq('+44345567890')
+  end
+
   it 'has nested locations' do
     expect(subject.locations.first.id).to eq('1d7c72fc-0c74-4418-8099-e1a4e704cb01')
     expect(subject.locations.first.name).to eq('Child CAB')
     expect(subject.locations.first.address).to eq('10 Child Address')
+    expect(subject.locations.first.online_booking_twilio_number).to eq('')
   end
 
   it 'has guiders' do
