@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3001/api/v1/booking_locations/whoops.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - _location-register_session=SVB1Qm5zTHM1Z0RRQkJuYjhaZjZ6aC9hWkc0L1V6ckRBSTBXdXVRZGpNVTF5bTM4TDVxRjNPcFJwVmRhSkxROUhqaEZORWtMSFRYZzhNRTZOaUZaNVE9PS0tbXNxNmFQaGtaZWpWNGpLUDhCdlBEQT09--f0975bb4151e883324d9870d5e7762e01fcd507e;
+        path=/; HttpOnly
+      X-Request-Id:
+      - 361785e5-954c-47dc-a861-35cdc0c69c1f
+      X-Runtime:
+      - '0.013704'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Mon, 11 Jul 2016 10:45:31 GMT
+recorded_with: VCR 3.0.1
