@@ -2,16 +2,19 @@
   "uid": "ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef",
   "name": "Hackney",
   "address": "300 Mare St, HACKNEY, London, E8 1HE",
+  "online_booking_twilio_number": "+443344556677",
   "locations": [
     {
       "uid": "183080c6-642b-4b8f-96fd-891f5cd9f9c7",
       "name": "Dalston",
-      "address": "22 Dalston Lane, Hackney, London, E8 3AZ"
+      "address": "22 Dalston Lane, Hackney, London, E8 3AZ",
+      "online_booking_twilio_number": ""
     },
     {
       "uid": "1a1ad00f-d967-448a-a4a6-772369fa5087",
       "name": "Tower Hamlets",
-      "address": "32 Greatorex Street, TOWER HAMLETS, London, E1 5NP"
+      "address": "32 Greatorex Street, TOWER HAMLETS, London, E1 5NP",
+      "online_booking_twilio_number": ""
     },
     {
       "uid": "c165d25e-f27b-4ce9-b3d3-e7415ebaa93c",
@@ -21,7 +24,8 @@
     {
       "uid": "a77a031a-8037-4510-b1f7-63d4aab7b103",
       "name": "Waltham Forest",
-      "address": "220 Hoe Street, Walthamstow, London, E17 3AY"
+      "address": "220 Hoe Street, Walthamstow, London, E17 3AY",
+      "online_booking_twilio_number": ""
     }
   ],
   "guiders": [
