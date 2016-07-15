@@ -15,6 +15,7 @@ module BookingLocations
       {}.tap do |hash|
         hash[:read_timeout]   = read_timeout
         hash['Authorization'] = "Bearer #{bearer_token}" if bearer_token
+        hash['Accept'] = 'application/json'
       end
     end
 
