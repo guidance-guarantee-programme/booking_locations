@@ -1,3 +1,7 @@
+## 0.3.0
+
+* Include `Accept` header in requests to JSON API
+
 ## 0.2.1
 
 * Return `online_booking_twilio_number` in stubbed response
