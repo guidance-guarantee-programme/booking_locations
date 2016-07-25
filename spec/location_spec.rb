@@ -32,6 +32,11 @@ RSpec.describe BookingLocations::Location do
 
   subject { described_class.new(data) }
 
+  it 'supports GlobalID serialization / deserialization' do
+    expect(described_class).to include(GlobalID::Identification)
+    expect(described_class).to respond_to(:find)
+  end
+
   it 'has an ID' do
     expect(subject.id).to eq('9d7c72fc-0c74-4418-8099-e1a4e704cb01')
   end

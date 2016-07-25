@@ -1,9 +1,16 @@
 require 'ostruct'
+require 'global_id'
 
 module BookingLocations
   class Location
+    include GlobalID::Identification
+
     def initialize(data)
       @data = data
+    end
+
+    def self.find(id)
+      BookingLocations.find(id)
     end
 
     def id
