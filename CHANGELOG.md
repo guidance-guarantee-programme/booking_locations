@@ -1,3 +1,7 @@
+## 0.4.0
+
+* Support GlobalID identification
+
 ## 0.3.0
 
 * Include `Accept` header in requests to JSON API
