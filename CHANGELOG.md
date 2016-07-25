@@ -1,3 +1,8 @@
+## 0.5.0
+
+* Return guider's name by ID
+* Return location instance by ID
+
 ## 0.4.0
 
 * Support GlobalID identification
