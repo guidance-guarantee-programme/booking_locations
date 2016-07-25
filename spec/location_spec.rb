@@ -85,4 +85,10 @@ RSpec.describe BookingLocations::Location do
       end
     end
   end
+
+  describe '#guider_name_for' do
+    it 'returns the guider name for the given ID' do
+      expect(subject.guider_name_for(1)).to eq('Rick Sanchez')
+    end
+  end
 end

@@ -41,6 +41,10 @@ module BookingLocations
       @slots ||= @data['slots'].map { |slot| Slot.new(slot) }
     end
 
+    def guider_name_for(guider_id)
+      guiders.find { |guider| guider.id == guider_id }.name
+    end
+
     def name_for(location_id)
       if id == location_id
         name
