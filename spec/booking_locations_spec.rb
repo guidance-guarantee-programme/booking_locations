@@ -8,14 +8,24 @@ RSpec.describe BookingLocations do
       let(:api) { instance_double(BookingLocations::Api) }
       let(:id) { '9d7c72fc-0c74-4418-8099-e1a4e704cb01' }
       let(:response) { Hash.new }
+      let(:cache) { double }
+      let(:ttl) { BookingLocations::DEFAULT_TTL }
 
       before do
-        BookingLocations.api = api
+        BookingLocations.api   = api
+        BookingLocations.cache = cache
         allow(api).to receive(:get).with(id).and_yield(response)
+        allow(cache).to receive(:fetch).with(id, expires: ttl).and_yield
       end
 
       it 'returns the `Location`' do
         expect(BookingLocations.find(id)).to be_a(BookingLocations::Location)
+      end
+
+      it 'reads-through the cache' do
+        expect(cache).to receive(:fetch).with(id, expires: 10).and_yield
+
+        BookingLocations.find(id, 10)
       end
     end
   end
