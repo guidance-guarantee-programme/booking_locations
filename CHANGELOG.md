@@ -1,3 +1,7 @@
+## 0.6.0
+
+* Adds configurable caching for location responses
+
 ## 0.5.0
 
 * Return guider's name by ID
