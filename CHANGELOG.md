@@ -1,3 +1,7 @@
+## 0.6.1
+
+* Replace our own null cache with Rails' `NullStore`
+
 ## 0.6.0
 
 * Adds configurable caching for location responses
