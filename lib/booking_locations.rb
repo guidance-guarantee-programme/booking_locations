@@ -2,9 +2,9 @@ require 'booking_locations/version'
 require 'booking_locations/api'
 require 'booking_locations/slot'
 require 'booking_locations/location'
-require 'booking_locations/null_cache'
 
 require 'active_support/core_ext/module/attribute_accessors'
+require 'active_support/cache/null_store'
 
 module BookingLocations
   DEFAULT_TTL = 2 * 60 * 60 # 2 hours
@@ -17,7 +17,7 @@ module BookingLocations
   end
 
   def self.cache
-    @@cache ||= BookingLocations::NullCache.new
+    @@cache ||= ActiveSupport::Cache::NullStore.new
   end
 
   def self.find(id, expires = DEFAULT_TTL)

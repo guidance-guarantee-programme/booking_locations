@@ -12,8 +12,8 @@ RSpec.describe BookingLocations do
       let(:ttl) { BookingLocations::DEFAULT_TTL }
 
       before do
-        BookingLocations.api   = api
-        BookingLocations.cache = cache
+        BookingLocations.api = api
+
         allow(api).to receive(:get).with(id).and_yield(response)
         allow(cache).to receive(:fetch).with(id, expires: ttl).and_yield
       end
@@ -22,10 +22,28 @@ RSpec.describe BookingLocations do
         expect(BookingLocations.find(id)).to be_a(BookingLocations::Location)
       end
 
-      it 'reads-through the cache' do
-        expect(cache).to receive(:fetch).with(id, expires: 10).and_yield
+      context 'when the cache store is configured' do
+        it 'reads-through the cache' do
+          with_cache(cache) do
+            expect(cache).to receive(:fetch).with(id, expires: 10).and_yield
 
-        BookingLocations.find(id, 10)
+            BookingLocations.find(id, 10)
+          end
+        end
+      end
+
+      context 'when the cache is not configured' do
+        it 'defaults to Rails null store' do
+          expect(BookingLocations.cache).to be_an(ActiveSupport::Cache::NullStore)
+        end
+      end
+
+      def with_cache(cache)
+        current = BookingLocations.cache
+        BookingLocations.cache = cache
+        yield
+      ensure
+        BookingLocations.cache = current
       end
     end
   end
