@@ -1,3 +1,7 @@
+## 0.7.0
+
+* Add stubbed responses for Taunton and children
+
 ## 0.6.1
 
 * Replace our own null cache with Rails' `NullStore`
