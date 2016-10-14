@@ -1,345 +1,696 @@
-{
-  "uid": "ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef",
-  "name": "Hackney",
-  "address": "300 Mare St, HACKNEY, London, E8 1HE",
-  "online_booking_twilio_number": "+443344556677",
-  "locations": [
-    {
-      "uid": "183080c6-642b-4b8f-96fd-891f5cd9f9c7",
-      "name": "Dalston",
-      "address": "22 Dalston Lane, Hackney, London, E8 3AZ",
-      "online_booking_twilio_number": ""
-    },
-    {
-      "uid": "1a1ad00f-d967-448a-a4a6-772369fa5087",
-      "name": "Tower Hamlets",
-      "address": "32 Greatorex Street, TOWER HAMLETS, London, E1 5NP",
-      "online_booking_twilio_number": ""
-    },
-    {
-      "uid": "c165d25e-f27b-4ce9-b3d3-e7415ebaa93c",
-      "name": "Haringey",
-      "address": "551B Tottenham High Road, HARINGEY, London, N17 6SB"
-    },
-    {
-      "uid": "a77a031a-8037-4510-b1f7-63d4aab7b103",
-      "name": "Waltham Forest",
-      "address": "220 Hoe Street, Walthamstow, London, E17 3AY",
-      "online_booking_twilio_number": ""
-    }
-  ],
-  "guiders": [
-    {
-      "id": 1,
-      "name": "Ben Lovell",
-      "email": "ben@example.com"
-    },
-    {
-      "id": 2,
-      "name": "Jenny Smith",
-      "email": "jenny@example.com"
-    },
-    {
-      "id": 3,
-      "name": "Bob Johnson",
-      "email": "bob@example.com"
-    },
-    {
-      "id": 4,
-      "name": "Janice Jones",
-      "email": "janice@example.com"
-    }
-  ],
-  "slots": [
-    {
-      "date": "2016-06-20",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-06-20",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-06-21",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-06-21",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-06-22",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-06-22",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-06-23",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-06-23",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-06-24",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-06-24",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-06-27",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-06-27",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-06-28",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-06-28",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-06-29",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-06-29",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-06-30",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-06-30",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-07-01",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-07-01",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-07-04",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-07-04",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-07-05",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-07-05",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-07-06",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-07-06",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-07-07",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-07-07",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-07-08",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-07-08",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-07-11",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-07-11",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-07-12",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-07-12",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-07-13",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-07-13",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-07-14",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-07-14",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-07-15",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-07-15",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-07-18",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-07-18",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-07-19",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-07-19",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-07-20",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-07-20",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-07-21",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-07-21",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-07-22",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-07-22",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-07-25",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-07-25",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-07-26",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-07-26",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-07-27",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-07-27",
-      "start": "1300",
-      "end": "1700"
-    },
-    {
-      "date": "2016-07-28",
-      "start": "0900",
-      "end": "1300"
-    },
-    {
-      "date": "2016-07-28",
-      "start": "1300",
-      "end": "1700"
-    }
-  ]
-}
+[
+  {
+    "uid": "ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef",
+    "name": "Hackney",
+    "address": "300 Mare St, HACKNEY, London, E8 1HE",
+    "online_booking_twilio_number": "+443344556677",
+    "locations": [
+      {
+        "uid": "183080c6-642b-4b8f-96fd-891f5cd9f9c7",
+        "name": "Dalston",
+        "address": "22 Dalston Lane, Hackney, London, E8 3AZ",
+        "online_booking_twilio_number": ""
+      },
+      {
+        "uid": "1a1ad00f-d967-448a-a4a6-772369fa5087",
+        "name": "Tower Hamlets",
+        "address": "32 Greatorex Street, TOWER HAMLETS, London, E1 5NP",
+        "online_booking_twilio_number": ""
+      },
+      {
+        "uid": "c165d25e-f27b-4ce9-b3d3-e7415ebaa93c",
+        "name": "Haringey",
+        "address": "551B Tottenham High Road, HARINGEY, London, N17 6SB"
+      },
+      {
+        "uid": "a77a031a-8037-4510-b1f7-63d4aab7b103",
+        "name": "Waltham Forest",
+        "address": "220 Hoe Street, Walthamstow, London, E17 3AY",
+        "online_booking_twilio_number": ""
+      }
+    ],
+    "guiders": [
+      {
+        "id": 1,
+        "name": "Ben Lovell",
+        "email": "ben@example.com"
+      },
+      {
+        "id": 2,
+        "name": "Jenny Smith",
+        "email": "jenny@example.com"
+      },
+      {
+        "id": 3,
+        "name": "Bob Johnson",
+        "email": "bob@example.com"
+      },
+      {
+        "id": 4,
+        "name": "Janice Jones",
+        "email": "janice@example.com"
+      }
+    ],
+    "slots": [
+      {
+        "date": "2016-06-20",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-06-20",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-06-21",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-06-21",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-06-22",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-06-22",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-06-23",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-06-23",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-06-24",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-06-24",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-06-27",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-06-27",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-06-28",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-06-28",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-06-29",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-06-29",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-06-30",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-06-30",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-01",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-01",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-04",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-04",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-05",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-05",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-06",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-06",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-07",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-07",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-08",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-08",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-11",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-11",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-12",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-12",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-13",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-13",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-14",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-14",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-15",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-15",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-18",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-18",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-19",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-19",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-20",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-20",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-21",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-21",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-22",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-22",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-25",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-25",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-26",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-26",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-27",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-27",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-28",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-28",
+        "start": "1300",
+        "end": "1700"
+      }
+    ]
+  },
+  {
+    "uid": "7f916cf6-d2bd-4bcc-90dc-594207c8b1f4",
+    "name": "Taunton",
+    "address": "St Mary's House, Magdalene Street, TAUNTON, Somerset, TA1 1SB",
+    "online_booking_twilio_number": "+441823240445",
+    "locations": [
+      {
+        "uid": "43fcab23-b01f-4805-a34d-e7edb77b65ce",
+        "name": "Exmouth",
+        "address": "Town Hall, St Andrews Road, EXMOUTH, Devon, EX8 1AW",
+        "online_booking_twilio_number": ""
+      },
+      {
+        "uid": "fdf2fa41-b0b7-44ae-a992-4409490dc9fb",
+        "name": "Honiton",
+        "address": "Honiton Library & Information Centre, 48-50 New Street, HONITON, Devon, EX14 1BS",
+        "online_booking_twilio_number": ""
+      },
+      {
+        "uid": "05dbf9e9-662b-4b10-ad85-70c38bd08d6d",
+        "name": "Minehead",
+        "address": " Alcombe Children’s Centre, Stephenson Road, Alcombe, Minehead, Somerset, TA24 5EB",
+        "online_booking_twilio_number": ""
+      },
+      {
+        "uid": "13e12f95-f709-4536-b6ee-8d7a735ddf9f",
+        "name": "North Somerset",
+        "address": "The Badger Centre, 3-6 Wadham Street, WESTON-SUPER-MARE, Somerset, BS23 1JY",
+        "online_booking_twilio_number": ""
+      },
+      {
+        "uid": "ca857ea1-e51a-442d-937d-b7c720d91ecf",
+        "name": "Sedgemoor",
+        "address": "Clarence House, High Street, Bridgwater, BRIDGWATER, Somerset, TA6 3BH",
+        "online_booking_twilio_number": ""
+      },
+      {
+        "uid": "90bebb70-c4bb-4572-afb2-e4ede5ca38c9",
+        "name": "Shepton Mallet",
+        "address": "Highfield House, Shape Mendip Campus, Cannards Grave Road, Shepton Mallet, BA4 5BT",
+        "online_booking_twilio_number": ""
+      },
+      {
+        "uid": "b5920e4c-ac91-49c3-8923-3efd10292db2",
+        "name": "Yeovil",
+        "address": "Petters House, Petters Way, YEOVIL, Somerset, BA20 1SH",
+        "online_booking_twilio_number": ""
+      }
+    ],
+    "guiders":  [
+      {
+        "id": 9,
+        "name": "John Smith",
+        "email": "john.smith@example.org.uk"
+      }
+    ],
+    "slots": [
+      {
+        "date": "2016-06-20",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-06-20",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-06-21",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-06-21",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-06-22",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-06-22",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-06-23",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-06-23",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-06-24",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-06-24",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-06-27",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-06-27",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-06-28",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-06-28",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-06-29",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-06-29",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-06-30",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-06-30",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-01",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-01",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-04",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-04",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-05",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-05",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-06",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-06",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-07",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-07",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-08",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-08",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-11",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-11",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-12",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-12",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-13",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-13",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-14",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-14",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-15",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-15",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-18",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-18",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-19",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-19",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-20",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-20",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-21",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-21",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-22",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-22",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-25",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-25",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-26",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-26",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-27",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-27",
+        "start": "1300",
+        "end": "1700"
+      },
+      {
+        "date": "2016-07-28",
+        "start": "0900",
+        "end": "1300"
+      },
+      {
+        "date": "2016-07-28",
+        "start": "1300",
+        "end": "1700"
+      }
+    ]
+  }
+]
