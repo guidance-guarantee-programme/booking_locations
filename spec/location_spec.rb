@@ -84,6 +84,12 @@ RSpec.describe BookingLocations::Location do
         expect(subject.name_for('1d7c72fc-0c74-4418-8099-e1a4e704cb01')).to eq('Child CAB')
       end
     end
+
+    context 'with a non-existent location ID' do
+      it 'returns an empty string' do
+        expect(subject.name_for('deadbeef-dead-beef-beef-deadbeefdead')).to eq('')
+      end
+    end
   end
 
   describe '#guider_name_for' do
