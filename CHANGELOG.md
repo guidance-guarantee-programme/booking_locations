@@ -1,3 +1,7 @@
+## 0.8.0
+
+* Guard against missing or outdated location names
+
 ## 0.7.0
 
 * Add stubbed responses for Taunton and children

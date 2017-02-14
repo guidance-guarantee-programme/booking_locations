@@ -52,7 +52,8 @@ module BookingLocations
     end
 
     def name_for(location_id)
-      location_for(location_id).name
+      found = location_for(location_id)
+      found ? found.name : ''
     end
   end
 end
