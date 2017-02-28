@@ -19,7 +19,7 @@ module BookingLocations
     def get(id)
       return nil unless KNOWN_LOCATION_IDS.include?(id)
 
-      yield json.find { |location| location["uid"] == id }
+      yield json.first
     end
 
     private
