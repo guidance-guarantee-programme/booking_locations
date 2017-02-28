@@ -1,3 +1,8 @@
+## 0.9.0
+
+* Restructured slot nesting for locations
+* Ensure child locations are stubbed properly
+
 ## 0.8.0
 
 * Guard against missing or outdated location names
