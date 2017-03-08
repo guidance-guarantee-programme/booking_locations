@@ -1,3 +1,7 @@
+## 0.9.1
+
+* Respect TTL options
+
 ## 0.9.0
 
 * Restructured slot nesting for locations

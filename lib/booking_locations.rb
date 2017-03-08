@@ -21,7 +21,7 @@ module BookingLocations
   end
 
   def self.find(id, expires = DEFAULT_TTL)
-    cache.fetch(id, expires: expires) do
+    cache.fetch(id, expires_in: expires) do
       api.get(id) do |response_hash|
         Location.new(response_hash)
       end
