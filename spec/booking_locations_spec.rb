@@ -15,7 +15,7 @@ RSpec.describe BookingLocations do
         BookingLocations.api = api
 
         allow(api).to receive(:get).with(id).and_yield(response)
-        allow(cache).to receive(:fetch).with(id, expires: ttl).and_yield
+        allow(cache).to receive(:fetch).with(id, expires_in: ttl).and_yield
       end
 
       it 'returns the `Location`' do
@@ -25,7 +25,7 @@ RSpec.describe BookingLocations do
       context 'when the cache store is configured' do
         it 'reads-through the cache' do
           with_cache(cache) do
-            expect(cache).to receive(:fetch).with(id, expires: 10).and_yield
+            expect(cache).to receive(:fetch).with(id, expires_in: 10).and_yield
 
             BookingLocations.find(id, 10)
           end
