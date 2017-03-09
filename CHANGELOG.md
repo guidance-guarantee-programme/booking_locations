@@ -1,3 +1,7 @@
+## 0.10.0
+
+* Add `Location#hidden` flag and predicate
+
 ## 0.9.1
 
 * Respect TTL options
