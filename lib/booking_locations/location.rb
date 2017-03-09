@@ -29,6 +29,11 @@ module BookingLocations
       @data['online_booking_twilio_number']
     end
 
+    def hidden
+      @data['hidden']
+    end
+    alias :hidden? :hidden
+
     def locations
       @locations ||= @data['locations'].map { |child_data| Location.new(child_data) }
     end

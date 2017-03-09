@@ -5,12 +5,14 @@ RSpec.describe BookingLocations::Location do
       'name' => 'Somewhere CAB',
       'address' => '10 Some Place',
       'online_booking_twilio_number' => '+44345567890',
+      'hidden' => false,
       'locations' => [
         {
           'uid' => '1d7c72fc-0c74-4418-8099-e1a4e704cb01',
           'name' => 'Child CAB',
           'address' => '10 Child Address',
-          'online_booking_twilio_number' => ''
+          'online_booking_twilio_number' => '',
+          'hidden' => false
         }
       ],
       'guiders' => [
@@ -51,6 +53,10 @@ RSpec.describe BookingLocations::Location do
 
   it 'has an online booking twilio number' do
     expect(subject.online_booking_twilio_number).to eq('+44345567890')
+  end
+
+  it 'has a flag to indicate when it is hidden' do
+    expect(subject).not_to be_hidden
   end
 
   it 'has nested locations' do
