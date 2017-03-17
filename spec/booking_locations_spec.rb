@@ -7,6 +7,7 @@ RSpec.describe BookingLocations do
     context 'when the location is present' do
       let(:api) { instance_double(BookingLocations::Api) }
       let(:id) { '9d7c72fc-0c74-4418-8099-e1a4e704cb01' }
+      let(:prefixed_id) { BookingLocations::DEFAULT_PREFIX.concat(id) }
       let(:response) { Hash.new }
       let(:cache) { double }
       let(:ttl) { BookingLocations::DEFAULT_TTL }
@@ -15,7 +16,7 @@ RSpec.describe BookingLocations do
         BookingLocations.api = api
 
         allow(api).to receive(:get).with(id).and_yield(response)
-        allow(cache).to receive(:fetch).with(id, expires_in: ttl).and_yield
+        allow(cache).to receive(:fetch).with(prefixed_id, expires_in: ttl).and_yield
       end
 
       it 'returns the `Location`' do
@@ -25,7 +26,7 @@ RSpec.describe BookingLocations do
       context 'when the cache store is configured' do
         it 'reads-through the cache' do
           with_cache(cache) do
-            expect(cache).to receive(:fetch).with(id, expires_in: 10).and_yield
+            expect(cache).to receive(:fetch).with(prefixed_id, expires_in: 10).and_yield
 
             BookingLocations.find(id, 10)
           end

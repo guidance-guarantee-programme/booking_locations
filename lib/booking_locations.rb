@@ -7,6 +7,7 @@ require 'active_support/core_ext/module/attribute_accessors'
 require 'active_support/cache/null_store'
 
 module BookingLocations
+  DEFAULT_PREFIX = 'booking_locations:'
   DEFAULT_TTL = 2 * 60 * 60 # 2 hours
 
   mattr_writer :api
@@ -20,8 +21,8 @@ module BookingLocations
     @@cache ||= ActiveSupport::Cache::NullStore.new
   end
 
-  def self.find(id, expires = DEFAULT_TTL)
-    cache.fetch(id, expires_in: expires) do
+  def self.find(id, expires = DEFAULT_TTL, prefix = DEFAULT_PREFIX)
+    cache.fetch(prefix.concat(id), expires_in: expires) do
       api.get(id) do |response_hash|
         Location.new(response_hash)
       end

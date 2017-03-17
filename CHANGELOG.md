@@ -1,3 +1,7 @@
+## 0.11.0
+
+* Add cache key namespacing / prefixing
+
 ## 0.10.0
 
 * Add `Location#hidden` flag and predicate
