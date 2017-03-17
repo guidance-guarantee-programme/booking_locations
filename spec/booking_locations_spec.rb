@@ -3,6 +3,18 @@ RSpec.describe BookingLocations do
     expect(BookingLocations.api).to be_a(BookingLocations::Api)
   end
 
+  describe '.clear_cache' do
+    let(:cache) { double }
+
+    it 'delegates to the underlying cache store' do
+      with_cache(cache) do
+        expect(cache).to receive(:delete_matched).with('bleh:*')
+
+        BookingLocations.clear_cache('bleh:')
+      end
+    end
+  end
+
   describe '.find' do
     context 'when the location is present' do
       let(:api) { instance_double(BookingLocations::Api) }
@@ -38,14 +50,14 @@ RSpec.describe BookingLocations do
           expect(BookingLocations.cache).to be_an(ActiveSupport::Cache::NullStore)
         end
       end
-
-      def with_cache(cache)
-        current = BookingLocations.cache
-        BookingLocations.cache = cache
-        yield
-      ensure
-        BookingLocations.cache = current
-      end
     end
+  end
+
+  def with_cache(cache)
+    current = BookingLocations.cache
+    BookingLocations.cache = cache
+    yield
+  ensure
+    BookingLocations.cache = current
   end
 end

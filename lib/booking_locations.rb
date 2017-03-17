@@ -28,4 +28,8 @@ module BookingLocations
       end
     end
   end
+
+  def self.clear_cache(prefix = DEFAULT_PREFIX)
+    cache.delete_matched(prefix.concat('*'))
+  end
 end
