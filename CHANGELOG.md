@@ -1,3 +1,7 @@
+## 0.12.0
+
+* Add ability to clear all prefixed cache entries
+
 ## 0.11.0
 
 * Add cache key namespacing / prefixing
