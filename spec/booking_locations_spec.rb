@@ -8,9 +8,9 @@ RSpec.describe BookingLocations do
 
     it 'delegates to the underlying cache store' do
       with_cache(cache) do
-        expect(cache).to receive(:delete_matched).with('bleh:*')
+        expect(cache).to receive(:delete_matched).with('booking_locations:*')
 
-        BookingLocations.clear_cache('bleh:')
+        BookingLocations.clear_cache
       end
     end
   end
@@ -19,7 +19,7 @@ RSpec.describe BookingLocations do
     context 'when the location is present' do
       let(:api) { instance_double(BookingLocations::Api) }
       let(:id) { '9d7c72fc-0c74-4418-8099-e1a4e704cb01' }
-      let(:prefixed_id) { BookingLocations::DEFAULT_PREFIX.concat(id) }
+      let(:prefixed_id) { BookingLocations.cache_prefix(id) }
       let(:response) { Hash.new }
       let(:cache) { double }
       let(:ttl) { BookingLocations::DEFAULT_TTL }
