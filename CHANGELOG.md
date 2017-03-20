@@ -1,3 +1,7 @@
+## 0.13.0
+
+* Don't mutate cache prefixes in place
+
 ## 0.12.0
 
 * Add ability to clear all prefixed cache entries
