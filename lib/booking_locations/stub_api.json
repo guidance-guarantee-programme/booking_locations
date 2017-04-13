@@ -4,6 +4,7 @@
     "name": "Hackney",
     "address": "Hackney Citizens Advice, 300 Mare St, Hackney, London, E8 1HE",
     "online_booking_twilio_number": "+442086291134",
+    "online_booking_reply_to": "dave@example.com",
     "hidden": false,
     "slots": [
       {
@@ -293,6 +294,7 @@
         "name": "Dalston",
         "address": "22 Dalston Lane, Hackney, London, E8 3AZ",
         "online_booking_twilio_number": "",
+        "online_booking_reply_to": "dave@example.com",
         "hidden": false,
         "slots": [
           {
@@ -893,6 +895,7 @@
         "name": "Newham",
         "address": "20 Freemasons Road, London, E16 3NA",
         "online_booking_twilio_number": "",
+        "online_booking_reply_to": "dave@example.com",
         "hidden": false,
         "slots": [
           {
@@ -1183,6 +1186,7 @@
         "name": "Tower Hamlets",
         "address": "32 Greatorex Street, Tower Hamlets, London, E1 5NP",
         "online_booking_twilio_number": null,
+        "online_booking_reply_to": "dave@example.com",
         "hidden": false,
         "slots": [
           {

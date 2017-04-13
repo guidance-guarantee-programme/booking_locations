@@ -29,6 +29,10 @@ module BookingLocations
       @data['online_booking_twilio_number']
     end
 
+    def online_booking_reply_to
+      @data['online_booking_reply_to']
+    end
+
     def hidden
       @data['hidden']
     end

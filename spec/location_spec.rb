@@ -5,6 +5,7 @@ RSpec.describe BookingLocations::Location do
       'name' => 'Somewhere CAB',
       'address' => '10 Some Place',
       'online_booking_twilio_number' => '+44345567890',
+      'online_booking_reply_to' => 'dave@example.com',
       'hidden' => false,
       'locations' => [
         {
@@ -12,6 +13,7 @@ RSpec.describe BookingLocations::Location do
           'name' => 'Child CAB',
           'address' => '10 Child Address',
           'online_booking_twilio_number' => '',
+          'online_booking_reply_to' => '',
           'hidden' => false
         }
       ],
@@ -55,15 +57,22 @@ RSpec.describe BookingLocations::Location do
     expect(subject.online_booking_twilio_number).to eq('+44345567890')
   end
 
+  it 'has an online booking reply-to' do
+    expect(subject.online_booking_reply_to).to eq('dave@example.com')
+  end
+
   it 'has a flag to indicate when it is hidden' do
     expect(subject).not_to be_hidden
   end
 
   it 'has nested locations' do
-    expect(subject.locations.first.id).to eq('1d7c72fc-0c74-4418-8099-e1a4e704cb01')
-    expect(subject.locations.first.name).to eq('Child CAB')
-    expect(subject.locations.first.address).to eq('10 Child Address')
-    expect(subject.locations.first.online_booking_twilio_number).to eq('')
+    child = subject.locations.first
+
+    expect(child.id).to eq('1d7c72fc-0c74-4418-8099-e1a4e704cb01')
+    expect(child.name).to eq('Child CAB')
+    expect(child.address).to eq('10 Child Address')
+    expect(child.online_booking_twilio_number).to eq('')
+    expect(child.online_booking_reply_to).to eq('')
   end
 
   it 'has guiders' do
