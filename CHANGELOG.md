@@ -1,3 +1,7 @@
+## 0.14.0
+
+* Include `online_booking_reply_to` in API response
+
 ## 0.13.0
 
 * Don't mutate cache prefixes in place
