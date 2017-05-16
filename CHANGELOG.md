@@ -1,3 +1,7 @@
+## 0.15.0
+
+* Loosen Active Support dependency
+
 ## 0.14.0
 
 * Include `online_booking_reply_to` in API response
