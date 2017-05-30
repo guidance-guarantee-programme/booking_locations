@@ -1,3 +1,7 @@
+## 0.16.0
+
+* Remove deprecated slots since they're now controller by planner
+
 ## 0.15.0
 
 * Loosen Active Support dependency

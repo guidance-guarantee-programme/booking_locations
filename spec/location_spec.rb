@@ -23,13 +23,6 @@ RSpec.describe BookingLocations::Location do
           'name' => 'Rick Sanchez',
           'email' => 'rick@example.com'
         }
-      ],
-      'slots' => [
-        {
-          'date' => '2016-06-20',
-          'start' => '0900',
-          'end' => '1300'
-        }
       ]
     }
   end
@@ -79,12 +72,6 @@ RSpec.describe BookingLocations::Location do
     expect(subject.guiders.first.id).to eq(1)
     expect(subject.guiders.first.name).to eq('Rick Sanchez')
     expect(subject.guiders.first.email).to eq('rick@example.com')
-  end
-
-  it 'has slots' do
-    expect(subject.slots.first.date).to eq('2016-06-20')
-    expect(subject.slots.first.start).to eq('0900')
-    expect(subject.slots.first.end).to eq('1300')
   end
 
   describe '#name_for' do
