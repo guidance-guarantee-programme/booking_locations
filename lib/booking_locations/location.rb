@@ -46,10 +46,6 @@ module BookingLocations
       @guiders ||= @data['guiders'].map { |guider| OpenStruct.new(guider) }
     end
 
-    def slots
-      @slots ||= @data['slots'].map { |slot| Slot.new(slot) }
-    end
-
     def guider_name_for(guider_id)
       guiders.find { |guider| guider.id == guider_id }.name
     end
