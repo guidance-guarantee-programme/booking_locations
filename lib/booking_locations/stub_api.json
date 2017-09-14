@@ -11,7 +11,7 @@
         "uid": "183080c6-642b-4b8f-96fd-891f5cd9f9c7",
         "name": "Dalston",
         "address": "22 Dalston Lane, Hackney, London, E8 3AZ",
-        "online_booking_twilio_number": "",
+        "online_booking_twilio_number": "+44800123456",
         "online_booking_reply_to": "dave@example.com",
         "hidden": false,
         "slots": [
@@ -32,7 +32,7 @@
         "uid": "1cc67bbb-b879-4def-8713-99255a0bce03",
         "name": "Enfield",
         "address": "Unit 3, Vincent House, 2E Nags Head Road, Ponders End, Enfield, Middlesex, EN3 7FN",
-        "online_booking_twilio_number": null,
+        "online_booking_twilio_number": "+44800321456",
         "hidden": true,
         "locations": []
       },
@@ -40,7 +40,7 @@
         "uid": "c165d25e-f27b-4ce9-b3d3-e7415ebaa93c",
         "name": "Haringey",
         "address": "551B Tottenham High Road, Haringey, London, N17 6SB",
-        "online_booking_twilio_number": null,
+        "online_booking_twilio_number": "+44800321654",
         "hidden": false,
         "locations": []
       },
@@ -48,7 +48,7 @@
         "uid": "89821b79-b132-4893-bc9f-c247dd9009fd",
         "name": "Newham",
         "address": "20 Freemasons Road, London, E16 3NA",
-        "online_booking_twilio_number": "",
+        "online_booking_twilio_number": "+442086291134",
         "online_booking_reply_to": "dave@example.com",
         "hidden": false,
         "locations": []
@@ -57,7 +57,7 @@
         "uid": "1a1ad00f-d967-448a-a4a6-772369fa5087",
         "name": "Tower Hamlets",
         "address": "32 Greatorex Street, Tower Hamlets, London, E1 5NP",
-        "online_booking_twilio_number": null,
+        "online_booking_twilio_number": "+442086291134",
         "online_booking_reply_to": "dave@example.com",
         "hidden": false,
         "locations": []
