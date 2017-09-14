@@ -1,3 +1,7 @@
+## 0.17.0
+
+* Update stubbed JSON with canonical twilio number changes
+
 ## 0.16.0
 
 * Remove deprecated slots since they're now controller by planner
