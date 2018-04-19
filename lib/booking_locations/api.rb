@@ -9,6 +9,11 @@ module BookingLocations
       nil
     end
 
+    def all
+      response = open("#{api_uri}/api/v1/booking_locations.json", headers_and_options)
+      JSON.parse(response.read)
+    end
+
     private
 
     def headers_and_options

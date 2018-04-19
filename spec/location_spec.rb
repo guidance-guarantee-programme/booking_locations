@@ -3,6 +3,7 @@ RSpec.describe BookingLocations::Location do
     {
       'uid' => '9d7c72fc-0c74-4418-8099-e1a4e704cb01',
       'name' => 'Somewhere CAB',
+      'title' => 'Somewhere CAB',
       'address' => '10 Some Place',
       'online_booking_twilio_number' => '+44345567890',
       'online_booking_reply_to' => 'dave@example.com',
@@ -40,6 +41,10 @@ RSpec.describe BookingLocations::Location do
 
   it 'has a name' do
     expect(subject.name).to eq('Somewhere CAB')
+  end
+
+  it 'has a title' do
+    expect(subject.title).to eq('Somewhere CAB')
   end
 
   it 'has an address' do
