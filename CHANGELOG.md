@@ -1,3 +1,7 @@
+## 0.18.0
+
+* Include the locations index API call and response
+
 ## 0.17.0
 
 * Update stubbed JSON with canonical twilio number changes
