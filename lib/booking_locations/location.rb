@@ -21,6 +21,10 @@ module BookingLocations
       @data['name']
     end
 
+    def title
+      @data['title']
+    end
+
     def address
       @data['address']
     end

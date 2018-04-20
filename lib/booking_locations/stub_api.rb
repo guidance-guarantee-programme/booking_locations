@@ -22,6 +22,15 @@ module BookingLocations
       yield json.first
     end
 
+    def all
+      json.map do |location|
+        {
+          'uid'   => location['uid'],
+          'title' => location['name']
+        }
+      end
+    end
+
     private
 
     def json

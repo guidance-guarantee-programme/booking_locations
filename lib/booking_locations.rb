@@ -28,6 +28,12 @@ module BookingLocations
     end
   end
 
+  def self.all
+    api.all.map do |location|
+      Location.new(location)
+    end
+  end
+
   def self.clear_cache
     cache.delete_matched(cache_prefix('*'))
   end
