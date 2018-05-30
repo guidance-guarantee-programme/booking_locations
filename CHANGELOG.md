@@ -1,3 +1,7 @@
+## 0.19.0
+
+* Include `online_booking_weekends` in the response
+
 ## 0.18.0
 
 * Include the locations index API call and response

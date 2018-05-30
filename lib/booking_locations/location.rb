@@ -37,6 +37,11 @@ module BookingLocations
       @data['online_booking_reply_to']
     end
 
+    def online_booking_weekends
+      @data['online_booking_weekends']
+    end
+    alias :online_booking_weekends? :online_booking_weekends
+
     def hidden
       @data['hidden']
     end

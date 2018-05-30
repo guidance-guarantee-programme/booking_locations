@@ -5,6 +5,7 @@
     "address": "Hackney Citizens Advice, 300 Mare St, Hackney, London, E8 1HE",
     "online_booking_twilio_number": "+442086291134",
     "online_booking_reply_to": "dave@example.com",
+    "online_booking_weekends": false,
     "hidden": false,
     "locations": [
       {
@@ -13,6 +14,7 @@
         "address": "22 Dalston Lane, Hackney, London, E8 3AZ",
         "online_booking_twilio_number": "+44800123456",
         "online_booking_reply_to": "dave@example.com",
+        "online_booking_weekends": true,
         "hidden": false,
         "slots": [
           {
@@ -33,6 +35,7 @@
         "name": "Enfield",
         "address": "Unit 3, Vincent House, 2E Nags Head Road, Ponders End, Enfield, Middlesex, EN3 7FN",
         "online_booking_twilio_number": "+44800321456",
+        "online_booking_weekends": false,
         "hidden": true,
         "locations": []
       },
@@ -41,6 +44,7 @@
         "name": "Haringey",
         "address": "551B Tottenham High Road, Haringey, London, N17 6SB",
         "online_booking_twilio_number": "+44800321654",
+        "online_booking_weekends": false,
         "hidden": false,
         "locations": []
       },
@@ -49,6 +53,7 @@
         "name": "Newham",
         "address": "20 Freemasons Road, London, E16 3NA",
         "online_booking_twilio_number": "+442086291134",
+        "online_booking_weekends": false,
         "online_booking_reply_to": "dave@example.com",
         "hidden": false,
         "locations": []
@@ -58,6 +63,7 @@
         "name": "Tower Hamlets",
         "address": "32 Greatorex Street, Tower Hamlets, London, E1 5NP",
         "online_booking_twilio_number": "+442086291134",
+        "online_booking_weekends": false,
         "online_booking_reply_to": "dave@example.com",
         "hidden": false,
         "locations": []
