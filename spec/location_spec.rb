@@ -7,6 +7,7 @@ RSpec.describe BookingLocations::Location do
       'address' => '10 Some Place',
       'online_booking_twilio_number' => '+44345567890',
       'online_booking_reply_to' => 'dave@example.com',
+      'online_booking_weekends' => true,
       'hidden' => false,
       'locations' => [
         {
@@ -14,6 +15,7 @@ RSpec.describe BookingLocations::Location do
           'name' => 'Child CAB',
           'address' => '10 Child Address',
           'online_booking_twilio_number' => '',
+          'online_booking_weekends' => false,
           'online_booking_reply_to' => '',
           'hidden' => false
         }
@@ -63,6 +65,10 @@ RSpec.describe BookingLocations::Location do
     expect(subject).not_to be_hidden
   end
 
+  it 'has a flag to indicate when it allows weekend availability' do
+    expect(subject).to be_online_booking_weekends
+  end
+
   it 'has nested locations' do
     child = subject.locations.first
 
@@ -71,6 +77,7 @@ RSpec.describe BookingLocations::Location do
     expect(child.address).to eq('10 Child Address')
     expect(child.online_booking_twilio_number).to eq('')
     expect(child.online_booking_reply_to).to eq('')
+    expect(child).not_to be_online_booking_weekends
   end
 
   it 'has guiders' do
