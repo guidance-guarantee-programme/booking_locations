@@ -1,3 +1,7 @@
+## 0.20.0
+
+* Don't swallow API timeouts resulting in `nil` cache entries
+
 ## 0.19.0
 
 * Include `online_booking_weekends` in the response

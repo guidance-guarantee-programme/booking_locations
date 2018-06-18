@@ -5,7 +5,7 @@ module BookingLocations
     def get(id)
       response = open("#{api_uri}/api/v1/booking_locations/#{id}.json", headers_and_options)
       yield JSON.parse(response.read)
-    rescue OpenURI::HTTPError, Net::ReadTimeout
+    rescue OpenURI::HTTPError
       nil
     end
 
