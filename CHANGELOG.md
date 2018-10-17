@@ -1,3 +1,7 @@
+## 0.21.0
+
+* Added a stubbed, inactive guider
+
 ## 0.20.0
 
 * Don't swallow API timeouts resulting in `nil` cache entries
