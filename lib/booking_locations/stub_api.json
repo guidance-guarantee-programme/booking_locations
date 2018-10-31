@@ -7,6 +7,7 @@
     "online_booking_reply_to": "dave@example.com",
     "online_booking_weekends": false,
     "hidden": false,
+    "realtime": true,
     "locations": [
       {
         "uid": "183080c6-642b-4b8f-96fd-891f5cd9f9c7",
@@ -16,6 +17,7 @@
         "online_booking_reply_to": "dave@example.com",
         "online_booking_weekends": true,
         "hidden": false,
+        "realtime": false,
         "slots": [
           {
             "date": "2016-06-20",
@@ -37,6 +39,7 @@
         "online_booking_twilio_number": "+44800321456",
         "online_booking_weekends": false,
         "hidden": true,
+        "realtime": false,
         "locations": []
       },
       {
@@ -46,6 +49,7 @@
         "online_booking_twilio_number": "+44800321654",
         "online_booking_weekends": false,
         "hidden": false,
+        "realtime": false,
         "locations": []
       },
       {
@@ -56,6 +60,7 @@
         "online_booking_weekends": false,
         "online_booking_reply_to": "dave@example.com",
         "hidden": false,
+        "realtime": false,
         "locations": []
       },
       {
@@ -66,6 +71,7 @@
         "online_booking_weekends": false,
         "online_booking_reply_to": "dave@example.com",
         "hidden": false,
+        "realtime": false,
         "locations": []
       }
     ],

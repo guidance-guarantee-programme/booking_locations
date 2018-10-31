@@ -47,6 +47,11 @@ module BookingLocations
     end
     alias :hidden? :hidden
 
+    def realtime
+      @data['realtime']
+    end
+    alias :realtime? :realtime
+
     def locations
       @locations ||= @data['locations'].map { |child_data| Location.new(child_data) }
     end
