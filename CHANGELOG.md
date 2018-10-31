@@ -1,3 +1,7 @@
+## 0.22.0
+
+* Added `realtime` flag to locations to signify realtime pilot enrolment
+
 ## 0.21.0
 
 * Added a stubbed, inactive guider

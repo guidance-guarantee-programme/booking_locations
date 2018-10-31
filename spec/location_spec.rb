@@ -9,6 +9,7 @@ RSpec.describe BookingLocations::Location do
       'online_booking_reply_to' => 'dave@example.com',
       'online_booking_weekends' => true,
       'hidden' => false,
+      'realtime' => true,
       'locations' => [
         {
           'uid' => '1d7c72fc-0c74-4418-8099-e1a4e704cb01',
@@ -17,7 +18,8 @@ RSpec.describe BookingLocations::Location do
           'online_booking_twilio_number' => '',
           'online_booking_weekends' => false,
           'online_booking_reply_to' => '',
-          'hidden' => false
+          'hidden' => false,
+          'realtime' => false
         }
       ],
       'guiders' => [
@@ -69,6 +71,10 @@ RSpec.describe BookingLocations::Location do
     expect(subject).to be_online_booking_weekends
   end
 
+  it 'has a flag to indicate when it allows realtime availability' do
+    expect(subject).to be_realtime
+  end
+
   it 'has nested locations' do
     child = subject.locations.first
 
@@ -78,6 +84,7 @@ RSpec.describe BookingLocations::Location do
     expect(child.online_booking_twilio_number).to eq('')
     expect(child.online_booking_reply_to).to eq('')
     expect(child).not_to be_online_booking_weekends
+    expect(child).not_to be_realtime
   end
 
   it 'has guiders' do
