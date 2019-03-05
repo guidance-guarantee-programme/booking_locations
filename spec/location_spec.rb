@@ -10,6 +10,7 @@ RSpec.describe BookingLocations::Location do
       'online_booking_weekends' => true,
       'hidden' => false,
       'realtime' => true,
+      'organisation' => 'cita',
       'locations' => [
         {
           'uid' => '1d7c72fc-0c74-4418-8099-e1a4e704cb01',
@@ -19,7 +20,8 @@ RSpec.describe BookingLocations::Location do
           'online_booking_weekends' => false,
           'online_booking_reply_to' => '',
           'hidden' => false,
-          'realtime' => false
+          'realtime' => false,
+          'organisation' => 'cita'
         }
       ],
       'guiders' => [
@@ -73,6 +75,10 @@ RSpec.describe BookingLocations::Location do
 
   it 'has a flag to indicate when it allows realtime availability' do
     expect(subject).to be_realtime
+  end
+
+  it 'has an organisation' do
+    expect(subject.organisation).to eq('cita')
   end
 
   it 'has nested locations' do
