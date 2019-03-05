@@ -1,3 +1,7 @@
+## 0.23.0
+
+* Added `organisation` for lookups
+
 ## 0.22.0
 
 * Added `realtime` flag to locations to signify realtime pilot enrolment
