@@ -1,3 +1,7 @@
+## 0.24.0
+
+* Make open timeout configurable
+
 ## 0.23.0
 
 * Added `organisation` for lookups
