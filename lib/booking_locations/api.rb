@@ -19,6 +19,7 @@ module BookingLocations
     def headers_and_options
       {}.tap do |hash|
         hash[:read_timeout]   = read_timeout
+        hash[:open_timeout]   = open_timeout
         hash['Authorization'] = "Bearer #{bearer_token}" if bearer_token
         hash['Accept'] = 'application/json'
       end
@@ -34,6 +35,10 @@ module BookingLocations
 
     def read_timeout
       ENV.fetch('BOOKING_LOCATIONS_API_READ_TIMEOUT', 5).to_i
+    end
+
+    def open_timeout
+      ENV.fetch('BOOKING_LOCATIONS_API_OPEN_TIMEOUT', 5).to_i
     end
   end
 end
