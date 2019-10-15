@@ -11,6 +11,10 @@ RSpec.describe BookingLocations::Location do
       'hidden' => false,
       'realtime' => true,
       'organisation' => 'cita',
+      'geometry' => {
+        'type' => 'Point',
+        'coordinates' => [-0.0551488, 51.5443995]
+      },
       'locations' => [
         {
           'uid' => '1d7c72fc-0c74-4418-8099-e1a4e704cb01',
@@ -21,7 +25,11 @@ RSpec.describe BookingLocations::Location do
           'online_booking_reply_to' => '',
           'hidden' => false,
           'realtime' => false,
-          'organisation' => 'cita'
+          'organisation' => 'cita',
+          'geometry' => {
+            'type' => 'Point',
+            'coordinates' => [-0.0728308, 51.5460941]
+          }
         }
       ],
       'guiders' => [
@@ -81,6 +89,10 @@ RSpec.describe BookingLocations::Location do
     expect(subject.organisation).to eq('cita')
   end
 
+  it 'has geo coordinates' do
+    expect(subject.coordinates).to eq([-0.0551488, 51.5443995])
+  end
+
   it 'has nested locations' do
     child = subject.locations.first
 
@@ -89,6 +101,7 @@ RSpec.describe BookingLocations::Location do
     expect(child.address).to eq('10 Child Address')
     expect(child.online_booking_twilio_number).to eq('')
     expect(child.online_booking_reply_to).to eq('')
+    expect(child.coordinates).to eq([-0.0728308, 51.5460941])
     expect(child).not_to be_online_booking_weekends
     expect(child).not_to be_realtime
   end

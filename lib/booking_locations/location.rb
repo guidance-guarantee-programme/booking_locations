@@ -56,6 +56,10 @@ module BookingLocations
       @data['organisation']
     end
 
+    def coordinates
+      @data.dig('geometry', 'coordinates')
+    end
+
     def locations
       @locations ||= @data['locations'].map { |child_data| Location.new(child_data) }
     end
