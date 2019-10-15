@@ -1,3 +1,7 @@
+## 0.25.0
+
+* Include `coordinates` in the response
+
 ## 0.24.0
 
 * Make open timeout configurable
