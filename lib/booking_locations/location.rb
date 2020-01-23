@@ -29,6 +29,10 @@ module BookingLocations
       @data['address']
     end
 
+    def accessibility_information
+      @data['accessibility_information']
+    end
+
     def online_booking_twilio_number
       @data['online_booking_twilio_number']
     end

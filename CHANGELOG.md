@@ -1,3 +1,7 @@
+## 0.26.0
+
+* Include `accessibility_information` in the response
+
 ## 0.25.0
 
 * Include `coordinates` in the response

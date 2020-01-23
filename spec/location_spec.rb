@@ -5,6 +5,7 @@ RSpec.describe BookingLocations::Location do
       'name' => 'Somewhere CAB',
       'title' => 'Somewhere CAB',
       'address' => '10 Some Place',
+      'accessibility_information' => 'Broken lift',
       'online_booking_twilio_number' => '+44345567890',
       'online_booking_reply_to' => 'dave@example.com',
       'online_booking_weekends' => true,
@@ -20,6 +21,7 @@ RSpec.describe BookingLocations::Location do
           'uid' => '1d7c72fc-0c74-4418-8099-e1a4e704cb01',
           'name' => 'Child CAB',
           'address' => '10 Child Address',
+          'accessibility_information' => '',
           'online_booking_twilio_number' => '',
           'online_booking_weekends' => false,
           'online_booking_reply_to' => '',
@@ -65,6 +67,10 @@ RSpec.describe BookingLocations::Location do
     expect(subject.address).to eq('10 Some Place')
   end
 
+  it 'has accessibility information' do
+    expect(subject.accessibility_information).to eq('Broken lift')
+  end
+
   it 'has an online booking twilio number' do
     expect(subject.online_booking_twilio_number).to eq('+44345567890')
   end
@@ -99,6 +105,7 @@ RSpec.describe BookingLocations::Location do
     expect(child.id).to eq('1d7c72fc-0c74-4418-8099-e1a4e704cb01')
     expect(child.name).to eq('Child CAB')
     expect(child.address).to eq('10 Child Address')
+    expect(child.accessibility_information).to eq('')
     expect(child.online_booking_twilio_number).to eq('')
     expect(child.online_booking_reply_to).to eq('')
     expect(child.coordinates).to eq([-0.0728308, 51.5460941])
