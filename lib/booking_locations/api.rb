@@ -3,14 +3,14 @@ require 'open-uri'
 module BookingLocations
   class Api
     def get(id)
-      response = open("#{api_uri}/api/v1/booking_locations/#{id}.json", headers_and_options)
+      response = URI.open("#{api_uri}/api/v1/booking_locations/#{id}.json", headers_and_options)
       yield JSON.parse(response.read)
     rescue OpenURI::HTTPError
       nil
     end
 
     def all
-      response = open("#{api_uri}/api/v1/booking_locations.json", headers_and_options)
+      response = URI.open("#{api_uri}/api/v1/booking_locations.json", headers_and_options)
       JSON.parse(response.read)
     end
 
