@@ -1,6 +1,7 @@
 require 'booking_locations/version'
 require 'booking_locations/api'
 require 'booking_locations/location'
+require 'booking_locations/guider'
 
 require 'active_support/core_ext/module/attribute_accessors'
 require 'active_support/cache/null_store'
