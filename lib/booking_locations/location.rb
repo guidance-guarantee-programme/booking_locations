@@ -69,7 +69,7 @@ module BookingLocations
     end
 
     def guiders
-      @guiders ||= @data['guiders'].map { |guider| OpenStruct.new(guider) }
+      @guiders ||= @data['guiders'].map { |guider| BookingLocations::Guider.new(guider) }
     end
 
     def guider_name_for(guider_id)
