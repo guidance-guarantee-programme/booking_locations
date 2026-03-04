@@ -1,5 +1,37 @@
 [
   {
+    "uid": "14a48488-a42f-422d-969d-526e30922fe4",
+    "name": "Pension Wise Video Appointment",
+    "address": "Pension Wise (Money and Pensions Service), Borough Hall, Bedford, Bedfordshire, MK42 9AB",
+    "accessibility_information": "Access via the lift is currently unavailable",
+    "online_booking_reply_to": "booking.pensionwise@moneyhelper.org.uk",
+    "online_booking_twilio_number": "+448001381585",
+    "online_booking_weekends": false,
+    "hidden": false,
+    "realtime": true,
+    "organisation": "tpas",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.4698012999999999,
+        52.1309899
+      ]
+    },
+    "locations": [],
+    "guiders": [
+      {
+        "id": 67,
+        "name": "George Lovell",
+        "email": "george@example.com"
+      },
+      {
+        "id": 68,
+        "name": "Becky Lovell",
+        "email": "becky@example.com"
+      }
+    ]
+  },
+  {
     "uid": "ac7112c3-e3cf-45cd-a8ff-9ba827b8e7ef",
     "name": "Hackney",
     "address": "Hackney Citizens Advice, 300 Mare St, Hackney, London, E8 1HE",
