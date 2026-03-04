@@ -13,13 +13,18 @@ module BookingLocations
     ca857ea1-e51a-442d-937d-b7c720d91ecf
     90bebb70-c4bb-4572-afb2-e4ede5ca38c9
     b5920e4c-ac91-49c3-8923-3efd10292db2
+    14a48488-a42f-422d-969d-526e30922fe4
   ).freeze
 
   class StubApi
     def get(id)
       return nil unless KNOWN_LOCATION_IDS.include?(id)
 
-      yield json.first
+      location = json.find do |location|
+        location['uid'] == id || location['locations'].find { |location| location['uid'] == id }
+      end
+
+      yield location
     end
 
     def all
