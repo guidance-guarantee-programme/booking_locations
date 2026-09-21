@@ -14,6 +14,7 @@ module BookingLocations
     90bebb70-c4bb-4572-afb2-e4ede5ca38c9
     b5920e4c-ac91-49c3-8923-3efd10292db2
     14a48488-a42f-422d-969d-526e30922fe4
+    3cc5b709-4192-48c8-b484-c308365d4134
   ).freeze
 
   class StubApi

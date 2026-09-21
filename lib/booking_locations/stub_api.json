@@ -1,7 +1,7 @@
 [
   {
     "uid": "14a48488-a42f-422d-969d-526e30922fe4",
-    "name": "Pension Wise Video Appointment",
+    "name": "Money & Pensions Service",
     "address": "Pension Wise (Money and Pensions Service), Borough Hall, Bedford, Bedfordshire, MK42 9AB",
     "accessibility_information": "Access via the lift is currently unavailable",
     "online_booking_reply_to": "booking.pensionwise@moneyhelper.org.uk",
@@ -17,7 +17,22 @@
         52.1309899
       ]
     },
-    "locations": [],
+    "locations": [
+      {
+        "uid": "3cc5b709-4192-48c8-b484-c308365d4134",
+        "name": "Pension Wise Video Appointment",
+        "hidden": false,
+        "realtime": true,
+        "organisation": "tpas",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -0.4698012999999999,
+            52.1309899
+          ]
+        }
+      }
+    ],
     "guiders": [
       {
         "id": 67,
