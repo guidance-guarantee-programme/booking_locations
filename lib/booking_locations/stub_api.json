@@ -71,7 +71,7 @@
         "online_booking_reply_to": "dave@example.com",
         "online_booking_weekends": true,
         "hidden": false,
-        "realtime": false,
+        "realtime": true,
         "organisation": "cita",
         "geometry": {
           "type": "Point",
@@ -89,7 +89,14 @@
             "end": "1700"
           }
         ],
-        "locations": []
+        "locations": [],
+        "guiders": [
+          {
+            "id": 67,
+            "name": "Bobby Childs",
+            "email": "bobbyc@example.com"
+          }
+        ]
       },
       {
         "uid": "1cc67bbb-b879-4def-8713-99255a0bce03",
@@ -105,7 +112,8 @@
           "type": "Point",
           "coordinates": [-0.0459925, 51.64864129999999]
         },
-        "locations": []
+        "locations": [],
+        "guiders": []
       },
       {
         "uid": "c165d25e-f27b-4ce9-b3d3-e7415ebaa93c",
@@ -121,7 +129,8 @@
           "type": "Point",
           "coordinates": [-0.0865752, 51.601425]
         },
-        "locations": []
+        "locations": [],
+        "guiders": []
       },
       {
         "uid": "89821b79-b132-4893-bc9f-c247dd9009fd",
@@ -138,7 +147,8 @@
           "type": "Point",
           "coordinates": [0.0252717, 51.5126254]
         },
-        "locations": []
+        "locations": [],
+        "guiders": []
       },
       {
         "uid": "1a1ad00f-d967-448a-a4a6-772369fa5087",
@@ -155,7 +165,8 @@
           "type": "Point",
           "coordinates": [-0.0675028, 51.5186601]
         },
-        "locations": []
+        "locations": [],
+        "guiders": []
       }
     ],
     "guiders": [
